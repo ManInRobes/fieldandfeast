@@ -65,7 +65,9 @@ table {
 
 /* GLOBAL STYLES (mobile first/small) */
 
-
+body{
+    margin: 0 auto;
+}
 
 /* MEDIA QUERY (medium 600px) */
 @media (min-width: 600px) {
