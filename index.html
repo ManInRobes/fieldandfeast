@@ -30,12 +30,19 @@
     <section id="Offerings">
         <h2>Our Offerings</h2>
 
-        <h3>Artisan Provisions</h3>
-        <p>Hand-selected, seasonal ingredients sourced from our estate farm and trusted local growers. Each item is chosen for its freshness, flavor, and integrity.</p>
+        <div class="grid-container">
+            <div>
+            <h3>Artisan Provisions</h3>
+            <p>Hand-selected, seasonal ingredients sourced from our estate farm and trusted local growers. Each item is chosen for its freshness, flavor, and integrity.</p>
+            </div>  
 
-        <h3>Exclusive Dining Experiences</h3>
-        <p>Join us for intimate chef-led tastings and farm-to-table feasts, where carefully crafted menus highlight the best of the season.</p>
+            <div>
+            <h3>Exclusive Dining Experiences</h3>
+            <p>Join us for intimate chef-led tastings and farm-to-table feasts, where carefully crafted menus highlight the best of the season.</p>
+            </div>
+        </div>
 
+        <div>
         <h3>The Field & Feast Monthly Basket</h3>
         <p>Experience a curated selection of premium seasonal ingredients delivered to your doorstep each month.</p>
         <ul>
@@ -45,22 +52,75 @@
         </ul>
         <p>Elevate your home dining with the finest farm-to-table offerings, elegantly packaged and delivered with care.
         </p>
+        </div>
 
     </section>
 
     <section id="Gallery">
+        
         <h2>A Gallery of Field & Feast</h2>
         <p>Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.</p>
 
-        <img src="imgs/tomatoes-200w.jpg" alt="Heirloom tomatoes at peak ripeness.">
-
-        <img src="imgs/olive-oil-200w.jpg" alt="Drizzling golden olive oil over fresh harvest">
-
-        <img src="imgs/table-setting-200w.jpg" alt="Elegant tablescape under the evening sky.">
-
-        <img src="imgs/chef-plating-200w.jpg" alt="Artful plating with seasonal ingredients.">
-
-        <img src="imgs/basket-200w.jpg" alt="Our monthly basket, curated with care.">
+        <div class="grid-container">
+            <div class="grid-item">
+            <img src="imgs/tomatoes-600w.jpg" alt="Heirloom tomatoes at peak ripeness."
+            srcset="imgs/tomatoes-200w.jpg 200w,
+                    imgs/tomatoes-300w.jpg 300w,
+                    imgs/tomatoes-600w.jpg 600w"
+            sizes="(max-width: 300px) 200px,
+                   (max-width: 450px) 300px,
+                   600px">
+            <p>Heirloom tomatoes at peak ripeness.</p>
+            </div>
+    
+            <div class="grid-item">
+            <img src="imgs/olive-oil-200w.jpg" alt="Drizzling golden olive oil over fresh harvest"
+            srcset="imgs/olive-oil-200w.jpg 200w,
+                    imgs/olive-oil-300w.jpg 300w,
+                    imgs/olive-oil-600w.jpg 600w"
+            sizes="(max-width: 300px) 200px,
+                   (max-width: 450px) 300px,
+                   600px">
+            <p>Drizzling golden olive oil over fresh harvest</p>
+            </div>
+        </div>
+    
+        <div class="grid-container">
+            <div class="grid-item">
+            <img src="imgs/table-setting-200w.jpg" alt="Elegant tablescape under the evening sky."
+            srcset="imgs/table-setting-200w.jpg 200w,
+                    imgs/table-setting-300w.jpg 300w,
+                    imgs/table-setting-600w.jpg 600w"
+            sizes="(max-width: 300px) 200px,
+                   (max-width: 450px) 300px,
+                   600px">
+            <p>Elegant tablescape under the evening sky.</p>
+            </div>
+    
+            <div class="grid-item">
+            <img src="imgs/chef-plating-200w.jpg" alt="Artful plating with seasonal ingredients."
+            srcset="imgs/chef-plating-200w.jpg 200w,
+                    imgs/chef-plating-300w.jpg 300w,
+                    imgs/chef-plating-600w.jpg 600w"
+            sizes="(max-width: 300px) 200px,
+                   (max-width: 450px) 300px,
+                   600px">
+            <p>Artful plating with seasonal ingredients.</p>
+            </div>
+        </div>
+    
+        <div class="grid-container">
+        <div class="grid-item">
+        <img src="imgs/basket-200w.jpg" alt="Our monthly basket, curated with care."
+        srcset="imgs/basket-200w.jpg 200w,
+                imgs/basket-300w.jpg 300w,
+                imgs/basket-600w.jpg 600w"
+        sizes="(max-width: 300px) 200px,
+               (max-width: 450px) 300px,
+               600px">
+        <p>Our monthly basket, curated with care.</p>
+        </div>
+        </div>
 
         <a href="">View Our Full Gallery</a>
 
@@ -70,10 +130,10 @@
 
 
     <footer>
-        <address>
+        <address style="margin-top: 35px;">
             123 Estate Lane, Wine Country, CA
             (555) 123-4567
-            hello@fieldandfeast.com
+            <div style="color: var(--champagne-gold); margin-bottom: 40px; margin-top: 10px;">hello@fieldandfeast.com</div>
         </address>
 
         <a href="#">Instagram</a> <a href="#">Facebook</a>
